@@ -1,0 +1,44 @@
+//2. Different ways to get the html element from DOM? 
+ 
+ //Using -  Id , class , tagname , css selector , name 
+ 
+//3. Write JS code to get unique elements from an array. 
+
+const array = [1, 2, 2, 3, 4, 4, 5];
+const uniqueArray = [];
+array.forEach((value) => {
+    if (!uniqueArray.includes(value)) {
+        uniqueArray.push(value);
+    }
+});
+console.log(uniqueArray);  // Output: [1, 2, 3, 4, 5]
+
+
+/*4. Have you used any cypress plugin, if yes, mention it. 
+
+- Used Pulugins like - Mochawesome-Reporter , cypress-screenshot-plugin , cypress-xpath
+
+*/
+
+/*5. Write a JS code to replace a string using regular expressions. Input: “I am in India” 
+Output: “I am with India” 
+*/
+const inputString = "I am in India";
+const outputString = inputString.split("in").join("with");
+console.log(outputString); // Output: "I am with India"
+
+/*
+6. Have you used a unix machine? If yes, list down some basic unix commands.
+
+- yes i have used 
+
+- Unix basic commands 
+ls                       # List files in the current directory
+cd ..                    # Move up one directory level
+cd /path/to/directory    # Change to specified directory
+mkdir new_directory      # Create a new directory
+rm file_name             # Remove a file
+rmdir directory_name     # Remove an empty directory
+pwd                      # Display the current directory path
+
+*/
